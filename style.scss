@@ -70,6 +70,10 @@ h3 {
     margin: 25px 0;
 }
 
+.img-fit-top {
+    object-position: top;
+}
+
 /* Safari button fix*/
 input, textarea {
     -webkit-appearance: none;
@@ -80,6 +84,7 @@ section, footer{
     max-width: var(--max-width);
     margin: auto;
 }
+
 
 // line hover effect
 .line-effect {
@@ -118,6 +123,8 @@ section, footer{
 .multi-col--center {
     justify-content: center;
 }
+
+// CTA ========================================================//
 
 .cta {
     color: var(--white);
@@ -158,7 +165,7 @@ section, footer{
         filter: invert(1);
         width:30px;
         height:20px;
-        background-image: url('images/phone-ringing-icon.svg');
+        background-image: url('images/icons/phone-ringing-icon.svg');
         background-size: contain;
         background-position: center center;
         background-repeat: no-repeat;
@@ -174,7 +181,7 @@ section, footer{
         filter: invert(1);
         width:30px;
         height:20px;
-        background-image: url('images/mail-send-icon.svg');
+        background-image: url('images/icons/mail-send-icon.svg');
         background-size: contain;
         background-position: center center;
         background-repeat: no-repeat;
@@ -183,6 +190,7 @@ section, footer{
     }
 }
 
+// CARDS =====================================================================//
 .card {
     margin: 15px;
     background-color: var(--white);
@@ -219,6 +227,7 @@ section, footer{
     }
 }
 
+// SITE ========================================================//
 
 .jumbotron {
     position: relative;
@@ -230,6 +239,11 @@ section, footer{
         width: 100%;
         height: calc(100vh - #{$header-logo-height + $header-padding *2});
     }
+    .hero-wrapper--page {
+        height: 100%;
+        padding-bottom: 50px;
+    }
+
     .hero-image {
         display: block;
         position: absolute;
@@ -239,7 +253,6 @@ section, footer{
         object-position: center;
         opacity:50%;
     }
-    
     
     .jumbotron__header {
         margin: auto;
@@ -295,6 +308,16 @@ section, footer{
     }
 }
 
+.page-content {
+    .col {
+        max-width: 900px;
+        background-color: var(--white);
+        margin: -50px auto 40px auto;
+        padding: 20px;
+        z-index: 2;
+    }
+}
+
 .marketing {
     text-align: center;
 
@@ -316,7 +339,7 @@ section, footer{
     }
     img {
         width: 100%;
-        height: 250px;
+        height: 350px;
         object-fit: cover;
         box-shadow: 2px 2px 12px rgba(0,0,0,0.3);
     }
@@ -349,7 +372,11 @@ section, footer{
         color: var(--blue-lt);
         font-style: italic;
     }
+    .card p {
+        font-style: normal;
+    }
     h3 {
+        font-style: italic;
         margin-top:10px;
     }
 }
@@ -368,6 +395,7 @@ section, footer{
     .features {
         padding-top: 40px;
         padding-bottom: 80px;
+        margin-top:50px;
 
         h2 {
             color: var(--white);
@@ -392,7 +420,7 @@ section, footer{
     }
     img {
         width: 100%;
-        height: 350px;
+        height: 400px;
         object-fit: cover;
         box-shadow: 2px 2px 12px rgba(0,0,0,0.3);
     }
@@ -420,6 +448,12 @@ section, footer{
     .col:last-child {
         text-align: center;
     }
+    iframe {
+        width:100%;
+        max-height:300px;
+        border-radius:10px;
+        box-shadow: 2px 2px 12px rgba(0,0,0,0.3);
+    }
 }
 
 .questions {
@@ -431,14 +465,16 @@ section, footer{
         background: var(--blue-dk);
         position: relative;
         width: 100%;
+        overflow:clip;
     }
 
     img {
         position:absolute;
         width: auto;
-        height: 100%;
+        // height: 100%;
         right:0;
-        // opacity: 0.5;
+        opacity: 0.8;
+        // object-fit:cover;
         mask-image: linear-gradient(
             90deg,
             rgba(0,0,0,0) 0%,
@@ -461,6 +497,7 @@ section, footer{
         padding-bottom:40px;
         h2 {
             color: var(--white);
+            text-shadow: 2px 2px 6px rgba(0,0,0,0.8)
         }
         .cta {
             box-shadow: 0 0 12px 8px rgba(255,255,255,0.5);
@@ -468,7 +505,7 @@ section, footer{
     }
 
 }
-
+// FOOTER ============================================================//
 .wrapper--footer {
     width:100%;
     background-color:rgb(12, 16, 27);
@@ -542,7 +579,7 @@ section, footer{
 
 }
 
-
+// NAV ==============================================//
 
 .nav-social, .social-icons {
     li {
@@ -558,10 +595,10 @@ section, footer{
         transition: all ease 0.3s;
     }
     a.instagram::before {
-        background: transparent url('images/instagram.svg') 0 0 no-repeat;
+        background: transparent url('images/icons/instagram.svg') 0 0 no-repeat;
     }
     a.facebook::before {
-        background: transparent url('images/facebook.svg') 0 0 no-repeat;
+        background: transparent url('images/icons/facebook.svg') 0 0 no-repeat;
     }
     a:hover::before {
         filter: invert(1);
