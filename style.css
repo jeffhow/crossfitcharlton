@@ -242,11 +242,22 @@ p, a, address, li {
   font-size: 1.3em;
 }
 
+a {
+  color: var(--red);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+a:hover {
+  color: var(--blue-lt);
+  text-decoration: underline;
+}
+
 nav li, .site-footer li {
   font-size: 0.9em;
 }
 
 section h2 {
+  margin-top: 20px;
   padding: 0 15px;
   text-align: center;
 }
@@ -325,6 +336,8 @@ section, footer {
 }
 .cta:hover {
   transform: scale(1.1);
+  color: var(--white);
+  text-decoration: none;
 }
 
 .cta--lg {
@@ -667,6 +680,9 @@ section, footer {
   padding: 15px;
 }
 
+.location {
+  margin-bottom: 40px;
+}
 .location .subheading {
   padding: 0 15px;
   text-align: center;
