@@ -409,6 +409,11 @@ section, footer {
   color: var(--text-color-reverse);
 }
 
+.card--two-icons img {
+  display: inline-block;
+  margin-right: 20px;
+}
+
 .jumbotron {
   position: relative;
   max-width: 100%;
@@ -419,11 +424,20 @@ section, footer {
   width: 100%;
   height: calc(100vh - 105px);
 }
+.jumbotron .page--about img {
+  object-position: 5% 15%;
+}
 .jumbotron .hero-wrapper--page {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   background-color: var(--blue-dk);
   height: 100%;
   min-height: calc(50vh - 105px);
   padding-bottom: 50px;
+}
+.jumbotron .hero-wrapper--page header {
+  margin: 0 auto;
 }
 .jumbotron .hero-wrapper--page .hero-image {
   opacity: 60%;
@@ -515,6 +529,32 @@ section, footer {
 }
 .page-content .col.schedule {
   padding: 20px;
+}
+.page-content .contact-us-social-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.page-content .contact-us-social-links a {
+  position: relative;
+  padding-left: 60px;
+  padding-right: 30px;
+}
+.page-content .contact-us-social-links a::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 20px;
+  top: 13px;
+  background-size: contain;
+  filter: invert(0.8);
+}
+.page-content .contact-us-social-links a.facebook::before {
+  background-image: url("images/icons/facebook.svg");
+}
+.page-content .contact-us-social-links a.instagram::before {
+  background-image: url("images/icons/instagram.svg");
 }
 
 .marketing {
@@ -658,7 +698,7 @@ section, footer {
   background: var(--blue-dk);
   position: relative;
   width: 100%;
-  overflow: clip;
+  overflow: hidden;
 }
 .final-cta img {
   position: absolute;
