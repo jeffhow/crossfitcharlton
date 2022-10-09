@@ -25,7 +25,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 2;
+  z-index: 5;
 }
 @media screen and (min-width: 768px) {
   .site-header .container {
@@ -118,7 +118,7 @@
 .site-header .primary-nav {
   display: flex;
   justify-content: center;
-  z-index: 1;
+  z-index: 4;
   width: 100%;
   position: absolute;
   top: 0;
@@ -238,8 +238,12 @@ h2 {
   margin-top: 60px;
 }
 
-p, a, address, p li {
+p, a, address, li {
   font-size: 1.3em;
+}
+
+nav li, .site-footer li {
+  font-size: 0.9em;
 }
 
 section h2 {
@@ -500,6 +504,7 @@ section, footer {
 
 .page-content .col {
   max-width: 900px;
+  width: 100%;
   background-color: var(--white);
   margin: -50px auto 40px auto;
   padding: 40px;
@@ -507,6 +512,9 @@ section, footer {
 }
 .page-content .col h2 {
   margin: 10px auto;
+}
+.page-content .col.schedule {
+  padding: 20px;
 }
 
 .marketing {
@@ -632,7 +640,7 @@ section, footer {
 .location .col:last-child {
   text-align: center;
 }
-.location iframe {
+.location .google-map {
   width: 100%;
   max-height: 300px;
   border-radius: 10px;
