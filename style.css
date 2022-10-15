@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --nav-breakpoint: 768px;
 }
@@ -281,6 +282,10 @@ input, textarea {
 section, footer {
   max-width: var(--max-width);
   margin: auto;
+}
+
+.checklist {
+  list-style-type: "✔ ";
 }
 
 .line-effect {
