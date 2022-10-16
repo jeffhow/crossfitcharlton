@@ -5,7 +5,7 @@
   <link>http://crossfitcharlton.com/</link>
 
 <item>
-     <link>https://crossfitcharlton.com/</link>
+     <link>https://www.crossfitcharlton.com/</link>
      <title>CrossFit Charlton</title>
      <description>Charlton's newest premier fitness facility featuring CrossFit's own Affiliating Program in a new state of the art facility.</description>
      <ror:updatePeriod></ror:updatePeriod>
@@ -13,7 +13,7 @@
      <ror:resourceOf>sitemap</ror:resourceOf>
 </item>
 <item>
-     <link>https://crossfitcharlton.com/index.html</link>
+     <link>https://www.crossfitcharlton.com/index.html</link>
      <title>CrossFit Charlton</title>
      <description>Charlton's newest premier fitness facility featuring CrossFit's own Affiliating Program in a new state of the art facility.</description>
      <ror:updatePeriod></ror:updatePeriod>
@@ -21,7 +21,7 @@
      <ror:resourceOf>sitemap</ror:resourceOf>
 </item>
 <item>
-     <link>https://crossfitcharlton.com/crossfit.html</link>
+     <link>https://www.crossfitcharlton.com/crossfit.html</link>
      <title>CrossFit</title>
      <description>Charlton's newest premier fitness facility featuring CrossFit's own Affiliating Program in a new state of the art facility.</description>
      <ror:updatePeriod></ror:updatePeriod>
@@ -29,7 +29,7 @@
      <ror:resourceOf>sitemap</ror:resourceOf>
 </item>
 <item>
-     <link>https://crossfitcharlton.com/foundations.html</link>
+     <link>https://www.crossfitcharlton.com/foundations.html</link>
      <title>Foundations</title>
      <description>Charlton's newest premier fitness facility featuring CrossFit's own Affiliating Program in a new state of the art facility.</description>
      <ror:updatePeriod></ror:updatePeriod>
@@ -37,7 +37,15 @@
      <ror:resourceOf>sitemap</ror:resourceOf>
 </item>
 <item>
-     <link>https://crossfitcharlton.com/drop-in.html</link>
+     <link>https://www.crossfitcharlton.com/crossfit-kids.html</link>
+     <title>CrossFit Kids</title>
+     <description>Charlton's newest premier fitness facility featuring CrossFit's own Affiliating Program in a new state of the art facility.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://www.crossfitcharlton.com/drop-in.html</link>
      <title>Drop-In</title>
      <description>Charlton's newest premier fitness facility featuring CrossFit's own Affiliating Program in a new state of the art facility.</description>
      <ror:updatePeriod></ror:updatePeriod>
@@ -45,7 +53,7 @@
      <ror:resourceOf>sitemap</ror:resourceOf>
 </item>
 <item>
-     <link>https://crossfitcharlton.com/schedule.html</link>
+     <link>https://www.crossfitcharlton.com/schedule.html</link>
      <title>Schedule</title>
      <description>Charlton's newest premier fitness facility featuring CrossFit's own Affiliating Program in a new state of the art facility.</description>
      <ror:updatePeriod></ror:updatePeriod>
@@ -53,7 +61,7 @@
      <ror:resourceOf>sitemap</ror:resourceOf>
 </item>
 <item>
-     <link>https://crossfitcharlton.com/contact-us.html</link>
+     <link>https://www.crossfitcharlton.com/contact-us.html</link>
      <title>Contact Us</title>
      <description>Charlton's newest premier fitness facility featuring CrossFit's own Affiliating Program in a new state of the art facility.</description>
      <ror:updatePeriod></ror:updatePeriod>
@@ -61,7 +69,7 @@
      <ror:resourceOf>sitemap</ror:resourceOf>
 </item>
 <item>
-     <link>https://crossfitcharlton.com/about.html</link>
+     <link>https://www.crossfitcharlton.com/about.html</link>
      <title>About</title>
      <description>Charlton's newest premier fitness facility featuring CrossFit's own Affiliating Program in a new state of the art facility.</description>
      <ror:updatePeriod></ror:updatePeriod>
@@ -69,7 +77,7 @@
      <ror:resourceOf>sitemap</ror:resourceOf>
 </item>
 <item>
-     <link>https://crossfitcharlton.com/get-started.html</link>
+     <link>https://www.crossfitcharlton.com/get-started.html</link>
      <title>Get Started</title>
      <description>Charlton's newest premier fitness facility featuring CrossFit's own Affiliating Program in a new state of the art facility.</description>
      <ror:updatePeriod></ror:updatePeriod>
@@ -77,7 +85,7 @@
      <ror:resourceOf>sitemap</ror:resourceOf>
 </item>
 <item>
-     <link>https://crossfitcharlton.com/terms-of-use.html</link>
+     <link>https://www.crossfitcharlton.com/terms-of-use.html</link>
      <title>Terms of Use</title>
      <description>Charlton's newest premier fitness facility featuring CrossFit's own Affiliating Program in a new state of the art facility.</description>
      <ror:updatePeriod></ror:updatePeriod>
@@ -85,7 +93,7 @@
      <ror:resourceOf>sitemap</ror:resourceOf>
 </item>
 <item>
-     <link>https://crossfitcharlton.com/privacy.html</link>
+     <link>https://www.crossfitcharlton.com/privacy.html</link>
      <title>Privacy</title>
      <description>Charlton's newest premier fitness facility featuring CrossFit's own Affiliating Program in a new state of the art facility.</description>
      <ror:updatePeriod></ror:updatePeriod>
@@ -93,9 +101,9 @@
      <ror:resourceOf>sitemap</ror:resourceOf>
 </item>
 <item>
-     <link>https://crossfitcharlton.com/sitemap.html</link>
-     <title></title>
-     
+     <link>https://www.crossfitcharlton.com/sitemap.html</link>
+     <title>crossfitcharlton.com Site Map - Generated by www.xml-sitemaps.com</title>
+     <description>crossfitcharlton.com Site Map - Generated by www.xml-sitemaps.com</description>
      <ror:updatePeriod></ror:updatePeriod>
      <ror:sortOrder>1</ror:sortOrder>
      <ror:resourceOf>sitemap</ror:resourceOf>
