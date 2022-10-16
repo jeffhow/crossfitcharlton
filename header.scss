@@ -55,7 +55,7 @@ $cta-bg-color: $red;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      z-index: 5;
+      z-index: 6;
       
       @media screen and (min-width: $nav-breakpoint) {
         width: calc(#{$header-logo-width} + #{$header-padding} *2);
@@ -154,7 +154,7 @@ $cta-bg-color: $red;
     .primary-nav {
       display: flex;
       justify-content: center;
-      z-index: 4;
+      z-index: 5;
       width: 100%;
       position: absolute;
       top: 0;
@@ -221,7 +221,7 @@ $cta-bg-color: $red;
       
       @media screen and (min-width: $nav-breakpoint) {
         position: relative;
-        z-index: 3;
+        z-index: 4;
         justify-content: flex-end;
         background-color: transparent;
         transform: none;
