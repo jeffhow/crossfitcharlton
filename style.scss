@@ -462,6 +462,7 @@ section, footer{
 }
 
 .getting-started {
+    margin-bottom: 50px;
     ol {
         list-style-type: none;
         margin: 0;
@@ -498,6 +499,22 @@ section, footer{
         margin-top:10px;
     }
 }
+
+.promo {
+    .col {
+        flex: 1 1 350px;
+        padding: 15px;
+        p {
+            line-height: 2;
+        }
+    }
+}
+.wrapper--promo {
+    background-color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
 .reviews {
     .avatar {
         border-radius: 50%;
@@ -513,7 +530,7 @@ section, footer{
     .features {
         padding-top: 40px;
         padding-bottom: 80px;
-        margin-top:50px;
+        // margin-top:50px;
 
         h2 {
             color: var(--white);

@@ -621,6 +621,9 @@ section, footer {
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.3);
 }
 
+.getting-started {
+  margin-bottom: 50px;
+}
 .getting-started ol {
   list-style-type: none;
   margin: 0;
@@ -655,6 +658,20 @@ section, footer {
   margin-top: 10px;
 }
 
+.promo .col {
+  flex: 1 1 350px;
+  padding: 15px;
+}
+.promo .col p {
+  line-height: 2;
+}
+
+.wrapper--promo {
+  background-color: white;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
 .reviews {
   margin-bottom: 40px;
 }
@@ -670,7 +687,6 @@ section, footer {
 .wrapper--features .features {
   padding-top: 40px;
   padding-bottom: 80px;
-  margin-top: 50px;
 }
 .wrapper--features .features h2 {
   color: var(--white);
