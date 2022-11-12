@@ -230,7 +230,19 @@ section, footer{
         top:3px;
     }
 }
-
+.page-content .drop-in-cta {
+    padding: 0;
+    margin-bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    .cta {
+        text-align: center;
+        margin:15px;
+        
+    }
+}
 // CARDS =====================================================================//
 .card {
     margin: 15px;
