@@ -11,7 +11,7 @@ sections:
   - final-cta.html
 ---
 
-<div class="container multi-col">
+<div class="container multi-col contact-us">
   <div class="col">
     <h2>Find us online</h2>
     <div class="col contact-us-social-links">
@@ -33,7 +33,35 @@ sections:
     
     <h2>Email us</h2>
     <div class="col" style="text-align: center;">
-      <a href="mailto:jason@crossfitcharlton.com" class="cta cta--intext cta--blue cta--email">Email</a>
+      <a href="mailto:kristen@crossfitcharlton.com" class="cta cta--intext cta--blue cta--email">Email</a>
     </div>
   </div>
+  <div class="col contact-form-container">
+
+    <div class="contact-modal" id="contact-modal">
+      <div class="message">
+          <p>
+              Thank you for your message.<br/>We will get in touch with you shortly.
+          </p>
+          <button id="contact-modal-close">Close</button>
+      </div>
+    </div>
+
+    <form method="post" class="contact-form" id="contact-form" >
+      <h2>Schedule your visit today</h2>
+      <label for="first-name">First Name *</label>
+      <input type="text" name="first-name" id="first-name" placeholder="First Name">
+      <label for="last-name">Last Name *</label>
+      <input type="text" name="last-name" id="last-name" placeholder="Last Name">
+      <input type="hidden" name="csrf_token" value="4efaf201e21d3854ae5908b95e41a1e83eebcd49954a1b2f6c284457eacc0d11">
+      <div style="position: absolute; left: -5000px;">
+        <input type="checkbox" name="old_fashioned_turquoise_waved_fox" value="1" tabindex="-1" autocomplete="no" aria-hidden="true">
+      </div>
+      <label for="phone">Phone *</label>
+      <input type="tel" name="phone" id="phone" placeholder="Phone">
+      <button class="cta cta--lg cta--blue">Schedule your visit</button>
+    </form>
+  </div>
 </div>
+
+<script type="module" src="assets/js/contact.js"></script>
