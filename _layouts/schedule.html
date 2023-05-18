@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+{%- include schedule-jumbotron.html -%}
+
+  <section class="page-content">
+    {{ content }}
+  </section>
+
+  {% if page.sections %}
+    {% for s in page.sections %}
+        {%- include {{ s }} -%}
+    {% endfor %}
+  {% endif %}

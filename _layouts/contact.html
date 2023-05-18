@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+{%- include page-jumbotron.html -%}
+
+  <section class="page-content">
+    {{ content }}
+  </section>
+
+  <section>
+    CONTACT FORM
+  </section>
+
+  {% if page.sections %}
+    {% for s in page.sections %}
+        {%- include {{ s }} -%}
+    {% endfor %}
+  {% endif %}
