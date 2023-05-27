@@ -16,11 +16,11 @@ async function submit_form(e) {
     
     const formData = new URLSearchParams( new FormData( contact_form ) );
     
-    const client_id = 'Uh7dL&&f$w8P&kwhjCQsuP8ysTf$ut12';
+    const client_id = 'kMb4w#eOeSNx1ICtMzo4bP3lRF!pbja%'; // jeff how?
+    // const client_id = 'Uh7dL&&f$w8P&kwhjCQsuP8ysTf$ut12'; // CFC
     const api_endpoint = 'https://api.paladinwebgroup.com/';
     fetch( api_endpoint, {
         method:'POST',
-        // mode: 'no-cors',
         headers: {
             "Client-Id": client_id
         },
