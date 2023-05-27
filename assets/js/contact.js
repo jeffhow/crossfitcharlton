@@ -30,12 +30,16 @@ async function submit_form(e) {
 
 }
 
-function showContactModal(){
+async function showContactModal(){
     contact_modal.classList.toggle('show');
-    contact_modal_close.focus();
+    setTimeout(()=> {
+        contact_modal.classList.toggle('show-animate');
+        contact_modal_close.focus();
+    },3);
 }
 
 function closeContactModal(){
     contact_modal.classList.toggle('show');
+    contact_modal.classList.toggle('show-animate');
     contact_form.reset();
 }
