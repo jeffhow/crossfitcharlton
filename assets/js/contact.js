@@ -1,5 +1,3 @@
-// import { submit_contact } from './paladinmail.js';
-
 
 const contact_modal = document.querySelector('#contact-modal');
 const contact_modal_close = document.querySelector('#contact-modal-close');
@@ -16,8 +14,7 @@ async function submit_form(e) {
     
     const formData = new URLSearchParams( new FormData( contact_form ) );
     
-    const client_id = 'kMb4w#eOeSNx1ICtMzo4bP3lRF!pbja%'; // jeff how?
-    // const client_id = 'Uh7dL&&f$w8P&kwhjCQsuP8ysTf$ut12'; // CFC
+    const client_id = 'Uh7dL&&f$w8P&kwhjCQsuP8ysTf$ut12'; // CFC
     const api_endpoint = 'https://api.paladinwebgroup.com/';
     fetch( api_endpoint, {
         method:'POST',
@@ -27,7 +24,7 @@ async function submit_form(e) {
         body: formData 
     })
     // debug
-    .then( response => console.log(response.text()) ) 
+    // .then( response => console.log(response.text()) ) 
     // .then( data => console.log(data))
     .catch( err => console.log(err) )
 
