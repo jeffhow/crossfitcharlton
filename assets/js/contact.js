@@ -27,7 +27,7 @@ async function submit_form(e) {
         body: formData 
     })
     // debug
-    // .then( response => console.log(response.text()) ) 
+    .then( response => console.log(response.text()) ) 
     // .then( data => console.log(data))
     .catch( err => console.log(err) )
 
