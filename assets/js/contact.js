@@ -25,7 +25,8 @@ async function submit_form(e) {
             "Client-Id": client_id
         },
         body: formData 
-    })// debug
+    })
+    // debug
     // .then( response => console.log(response.text()) ) 
     // .then( data => console.log(data))
     .catch( err => console.log(err) )
