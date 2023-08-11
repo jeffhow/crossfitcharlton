@@ -68,7 +68,7 @@
         align-content: flex-end;
         max-width: var(--max-width);
         
-        @media screen and (min-width: $breakpoint) {
+        @media screen and (min-width: $jumbo-breakpoint) {
             height: 70%;
         }
         
