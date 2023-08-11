@@ -6,6 +6,7 @@
     z-index: 1;
     justify-content: space-around;
     padding: 20px;
+   
     .col {
         margin: 0 10px;
         max-width: 400px;
@@ -42,6 +43,10 @@
         position: relative;
         padding-left: 60px;
         padding-right:30px;
+        transform-origin: bottom;
+        &:hover {
+            transform: scale(1.1);
+        }
 
         &::before {
             content:'';
@@ -51,12 +56,20 @@
             left:20px;
             top:13px;
             background-size: contain;
-            filter: invert(0.8);
+            filter: invert(0.6);
         }
         &.facebook::before {
+            left: 70px;
+            top: -20px;
+            width: 50px;
+            height: 50px;        
             background-image: url('images/icons/facebook.svg');
         }
         &.instagram::before {
+            left: -50px;
+            top: -20px;
+            width: 50px;
+            height: 50px;        
             background-image: url('images/icons/instagram.svg');
         }
     }

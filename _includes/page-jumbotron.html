@@ -1,7 +1,13 @@
 <section class="jumbotron">
     <div class="hero-wrapper hero-wrapper--page">
       {% if page.jumbo-image %}
-        <img src="{{ page.jumbo-image }}" class="hero-image" alt="Gym Photo">
+        <img src="{{ page.jumbo-image }}" 
+          class="hero-image" 
+          alt="Gym Photo"
+          {% if page.jumbo-pos %}
+          style="object-position: {{ page.jumbo-pos }};"
+          {% endif %}
+        >
       {% endif %}
 
       <header class="container multi-col jumbotron__header">
@@ -14,7 +20,7 @@
         {% endif %}
         </div>
         <div class="col">
-          <a class="cta cta--lg" href="contact-us.html#start-here">Schedule My Visit</a>
+          <a class="cta cta--lg" href="get-started">Get Started</a>
         </div>
       </header>
     </div>  
