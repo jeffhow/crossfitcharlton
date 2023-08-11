@@ -1,6 +1,7 @@
 .community {
     h2 {
-        text-align: left;
+        // text-align: left; // multi-col with image
+        text-align: center;
     }
     img {
         width: 100%;
@@ -13,7 +14,9 @@
         flex-wrap: wrap;
     }
     .col {
-        flex: 1 1 350px;
+        // flex: 1 1 350px; // multi-col with image
+        max-width: 800px; // single-col
         padding: 15px;
+        margin: auto;
     }
 }
