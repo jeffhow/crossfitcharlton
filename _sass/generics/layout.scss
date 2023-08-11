@@ -1,0 +1,41 @@
+/* Layout Control*/
+section, footer{
+    max-width: var(--max-width);
+    margin: auto;
+}
+
+
+.multi-col {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+   
+    .col--vertical {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.multi-col--reverse {
+    flex-direction: row-reverse;
+}
+.multi-col--center {
+    justify-content: center;
+}
+
+.page-content {
+    .col {
+        max-width: 900px;
+        width: 100%;
+        background-color: var(--white);
+        margin: -50px auto 40px auto;
+        padding: 40px;
+        z-index: 2;
+        h2 {
+            margin:10px auto;
+        }
+        &.schedule {
+            padding: 20px;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+.location {
+    margin-bottom:40px;
+    .subheading {
+        padding: 0 15px;
+        text-align: center;
+    }
+    .multi-col {
+        align-items: center;
+    }
+    .col {
+        padding: 15px;
+    }
+    .col:last-child {
+        text-align: center;
+    }
+    .google-map {
+        width:100%;
+        max-height:300px;
+        border-radius:10px;
+        box-shadow: 2px 2px 12px rgba(0,0,0,0.3);
+    }
+}

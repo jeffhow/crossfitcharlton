@@ -1,0 +1,72 @@
+.wrapper--footer {
+    width:100%;
+    background-color:rgb(12, 16, 27);
+}
+.site-footer {
+    padding: 30px;
+    font-size: 1em;
+    .col:first-child {
+        align-items: center;
+    }
+    .footer-brand {
+        transition: transform ease 0.3s;
+        &:hover, &:focus {
+            transform: scale(1.1);
+        }
+    }
+
+    .crossfit-journal-link {
+        margin: 20px auto;
+        transition: transform ease 0.3s;
+        &:hover, &:focus {
+            transform: scale(1.1);
+        }
+    }
+    h4 {
+        color: var(--red);
+        margin: 20px 0 0 0;
+        font-size: 1.3em;
+    }
+    a, p, address {
+        color: rgba(255,255,255,0.9);
+        text-decoration: none;
+        font-size: 1.3em;
+    }
+    a {
+        color: var(--white);
+        display: inline-block;
+        transition: color ease 0.3s;
+        &:hover, &:focus {
+            // transform: scale(1.1);
+            text-decoration: underline;
+            color: var(--blue-lt);
+        }
+    }
+    .copyright {
+        margin-top:40px;
+        margin-bottom: 0;
+        text-align: center;
+        a {
+            font-size: 1.1em;
+            transition: color ease 0.3s;
+            &:hover, &:focus {
+                // transform: none;
+                text-decoration: underline;
+                color: var(--blue-lt);
+            }
+        }
+    }
+    ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    li {
+        margin: 10px 0;
+        padding: 0;
+    }
+    .col .col {
+        flex: 1 1 400px;
+    }
+
+}

@@ -1,0 +1,19 @@
+/* Special Announcement */
+.special-announcement {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-color: var(--blue-dk);
+    z-index: 10;
+    text-align: center;
+    padding: 10px;
+    color: white; //var(--red);
+    text-shadow: 0 0 4px black;
+    * {
+        margin: 0 10px;
+        padding: 0;
+    }
+    img {
+        opacity: 0.5;
+    }
+}

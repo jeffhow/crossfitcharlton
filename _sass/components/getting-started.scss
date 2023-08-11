@@ -1,0 +1,38 @@
+.getting-started {
+    margin-bottom: 50px;
+    ol {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    .card::before {
+        content: "02";
+        font-size: 3em;
+        font-weight: 700;
+        color: var(--blue-lt);
+        font-style: italic;
+    }
+    .card:first-child::before {
+        content: "01";
+        font-size: 3em;
+        font-weight: 700;
+        color: var(--blue-lt);
+        font-style: italic;
+    }
+    .card:last-child::before {
+        content: "03";
+        font-size: 3em;
+        font-weight: 700;
+        color: var(--blue-lt);
+        font-style: italic;
+    }
+    .card p {
+        font-style: normal;
+    }
+    
+
+    h3 {
+        font-style: italic;
+        margin-top:10px;
+    }
+}
