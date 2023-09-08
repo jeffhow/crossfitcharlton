@@ -1,0 +1,143 @@
+---
+title: "Cancelation Policy"
+layout: contact
+
+jumbo-image: "assets/images/photos/jason-installing-sign-opt.jpg"
+intro-text: "Cancelation Policy"
+jumbo-title: "We're sorry to see you go"
+
+sections:
+  - location.html
+  - final-cta.html
+---
+
+<div class="container multi-col contact-us">
+  <h2>Cancellation Policy</h2>
+  <ol class="space-after-item">
+    <li>
+      If you decide to reactivate your membership in the future (<em>and we hope you
+      do</em>) membership rates in effect at the time of reactivation will be
+      applicable as membership rates are subject to change.
+    </li>
+    <li>
+      If you would like to put your membership on hold instead of canceling, you
+      can submit a <a href="hold.html" class="size-normal">Membership Hold Request</a>. If you're sure you'd like to cancel,
+      just complete and submit the form below. This will serve as your four-week
+      written cancellation notice as required by your membership agreement. Your
+      membership will be canceled 4 weeks from the submission of the form below.
+      Note that if you have a scheduled renewal payment within this 4 week
+      period, the payment will be processed as scheduled. All payments are
+      non-refundable.
+    </li>
+    <li>
+      Cancellation of membership prior to the expiration of any specified
+      commitment period requires an early termination fee equal to the standard
+      non-discounted month-to-month rate.
+    </li>
+  </ol>
+
+  <div class="contact-form-container">
+    <div class="contact-modal" id="contact-modal">
+      <div class="message">
+        <p>
+          Thank you for your request.<br />We will process your request soon.
+        </p>
+        <button id="contact-modal-close" class="cta cta--blue">Close</button>
+      </div>
+    </div>
+
+    <form method="post" class="contact-form" id="contact-form">
+      <h2>Cancellation Request Form</h2>
+      <label for="first-name">First Name*</label>
+      <input
+        type="text"
+        name="first-name"
+        id="first-name"
+        placeholder="First Name"
+        required
+        />
+        <label for="last-name">Last Name*</label>
+        <input
+        type="text"
+        name="last-name"
+        id="last-name"
+        placeholder="Last Name"
+        required
+      />
+      <div style="position: absolute; left: -5000px">
+        <input
+          type="checkbox"
+          name="turing-test"
+          value="1"
+          tabindex="-1"
+          autocomplete="no"
+          aria-hidden="true"
+        />
+      </div>
+      <label for="phone">Phone*</label>
+      <input type="tel" name="phone" id="phone" placeholder="Phone" required />
+      <label for="email">Email*</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Email"
+        required
+      />
+      <label for="reason">Please select the option below that best describes your reason for leaving</label>
+      <select name="reason" id="reason">
+        <option selected class="muted">Select Reason</option>
+        <option value="0">Too Expensive (Financial Reasons)</option>
+        <option value="1">Location (Not convenient or relocating)</option>
+        <option value="2">Difficulty (The workouts were too difficult)</option>
+        <option value="3">Injury (I am injured)</option>
+        <option value="4">Lack of Attendance</option>
+        <option value="5">Maternity (I am having a baby!)</option>
+      </select>
+      <label for="staff-rating">How well did the coaching staff attend to your fitness goals and needs?</label>
+      <select name="staff-rating" id="staff-rating">
+        <option value="4">Extremely well</option>
+        <option value="3">Very well</option>
+        <option value="2">Moderately well</option>
+        <option value="1">Slightly well</option>
+        <option value="0">Not at all well</option>
+      </select>
+      <label for="facilities-rating">How would you describe your satisfaction with the facilities including equipment, parking, and accessibility?</label>
+      <select name="facilities-rating" id="facilities-rating">
+        <option value="4">Extremely well</option>
+        <option value="3">Very well</option>
+        <option value="2">Moderately well</option>
+        <option value="1">Slightly well</option>
+        <option value="0">Not at all well</option>
+      </select>
+
+      <fieldset>
+        <legend>Overall, how would you rate your experience (10 being awesome)?</legend>
+        <div class="radio-options">
+          <div class="radio-option"><input type="radio" id="rating1" name="rating" value="1"><label for="rating1">1</label></div>
+          <div class="radio-option"><input type="radio" id="rating3" name="rating" value="3"><label for="rating2">3</label></div>
+          <div class="radio-option"><input type="radio" id="rating4" name="rating" value="4"><label for="rating4">4</label></div>
+          <div class="radio-option"><input type="radio" id="rating2" name="rating" value="2"><label for="rating2">2</label></div>
+          <div class="radio-option"><input type="radio" id="rating5" name="rating" value="5"><label for="rating5">5</label></div>
+          <div class="radio-option"><input type="radio" id="rating6" name="rating" value="6"><label for="rating6">6</label></div>
+          <div class="radio-option"><input type="radio" id="rating7" name="rating" value="7"><label for="rating7">7</label></div>
+          <div class="radio-option"><input type="radio" id="rating8" name="rating" value="8"><label for="rating8">8</label></div>
+          <div class="radio-option"><input type="radio" id="rating9" name="rating" value="9"><label for="rating9">9</label></div>
+          <div class="radio-option"><input type="radio" id="rating10" name="rating" value="10" checked><label for="rating10">10</label></div>
+        </div>
+      </fieldset>
+      <label for="friend-rating">How likely are you to recommend us to a friend?</label>
+      <select name="friend-rating" id="friend-rating">
+        <option value="4">Extremely likely</option>
+        <option value="3">Very likely</option>
+        <option value="2">Moderately likely</option>
+        <option value="1">Slightly likely</option>
+        <option value="0">Not at all</option>
+      </select>
+
+      <button class="cta cta--lg cta--blue" style="margin-top: 40px">Request Cancellation</button>
+    </form>
+  </div>
+</div>
+
+<script type="module" src="assets/js/contact.js"></script>

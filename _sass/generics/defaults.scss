@@ -36,6 +36,11 @@ html {
 body{
     margin:0;
     background-color: #ccc;
+    color: $soft-black;
+}
+
+h1, h2, h3, h4, h5, h6, p, input, li, select, option, label {
+    color: $soft-black;
 }
 
 .img-fit-top {
