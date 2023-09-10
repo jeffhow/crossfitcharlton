@@ -55,7 +55,7 @@
         height:100%;
         object-fit: cover;
         object-position: center;
-        opacity:50%;
+        opacity:70%;
     }
     
     .jumbotron__header {
@@ -100,6 +100,7 @@
             .description {
                 color: var(--white);
                 font-weight: 700;
+                text-shadow: 2px 2px 2px black;
             }
         }
     }

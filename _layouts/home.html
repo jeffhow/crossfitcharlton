@@ -3,11 +3,16 @@ layout: default
 ---
 <section class="jumbotron">
     <div class="hero-wrapper">
-      <img src="assets/images/photos/starters.jpg" class="hero-image"  alt="Gym Photo">
+      <picture class="hero-image">
+        <source media="(max-width: 500px)" srcset="assets/images/photos/shirts-500x500.jpg" />
+        <source media="(max-width: 800px)" srcset="assets/images/photos/shirts-800x800.jpg" />
+        <source media="(min-width: 1080px)" srcset="assets/images/photos/shirts-1080x1080.jpg" />
+        <img src="assets/images/photos/shirts-1080x1080.jpg" class="hero-image"  alt="Photo of red CrossFit Charlton t-shirts">
+      </picture>
+      <!-- <img src="assets/images/photos/shirts-1080x1080.jpg" class="hero-image"  alt="Photo of red CrossFit Charlton t-shirts"> -->
       
       <header class="container multi-col jumbotron__header">
         <div class="jumbotron__text col">
-          <!-- <p class="intro-text">CrossFit Gym in Charlton</p> -->
           <h2 class="page-title">Charlton's newest premier<br>fitness facility</h2>
           
           <p class="description"><em class="">Featuring CrossFit's 
@@ -25,7 +30,7 @@ layout: default
     <div class="container multi-col">
       <div class="col card card--rounded">
         <!-- <img src="assets/images/icons/trainer-icon.svg" alt="coach icon" width="75" height="75"> -->
-        <h3>Expert Staff</h3>
+        <h3>Expert Coaching</h3>
         <p>Our staff of trained,  coaches will keep you exercising safely and effectively.</p>
       </div>
       <div class="col card card--rounded">
@@ -35,8 +40,8 @@ layout: default
       </div>
       <div class="col card card--rounded">
         <!-- <img src="assets/images/icons/welcome-icon.svg" alt="people talking icon" width="100" height="75"> -->
-        <h3>Everyone is welcome</h3>
-        <p>We create an environment that is friendly and welcoming at all fitness levels.</p>
+        <h3>Facility</h3>
+        <p>We take pride in our 3200 sq ft facility with clean and well maintained equipment.</p>
       </div>
     </div>
 </section>
@@ -80,7 +85,7 @@ layout: default
     <ol class="container multi-col">
       <li class="card card--rounded">
         <h3>Visit Us</h3>
-        <p>Tell us your fitness goals. We'll help you plan a starting point and you'll try out a class for free!</p>
+        <p>Schedule a "no sweat" introduction, meet us and tell us your fitness goals. We'll help you plan a starting point and you'll try out a class for free!</p>
       </li>
       
       <li class="card card--rounded">
@@ -96,8 +101,5 @@ layout: default
   </section>
 </div>
   
-{%- include promos.html -%}
 {%- include community.html -%}
 {%- include location.html -%}
-<!-- {%- include questions.html -%} -->
-
