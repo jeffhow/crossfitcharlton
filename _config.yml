@@ -24,7 +24,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   CHARLTON'S NEWEST PREMIERFITNESS FACILITY
   Featuring CrossFit's own Affiliating Program in a new state of the art facility.
   Start Today with a Free 1-on-1 Intro
-baseurl: "/crossfitcharlton" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 facebook_username: CrossFitCharlton
 instagram_username:  crossfitcharlton
