@@ -1,0 +1,39 @@
+.card {
+    margin: 15px;
+    background-color: var(--white);
+    padding: 25px;
+    box-shadow:2px 2px 12px rgba(0, 0, 0, 0.3);
+    flex: 1 1 250px;
+
+    img {
+        opacity: 0.5;;
+    }
+
+    h3 {
+        font-size: 1.7em;
+        color: var(--blue-dk);
+        margin:15px 0;
+    }
+    p {
+        margin:0;
+        line-height: 1.5;
+        font-style: italic;
+        color: var(--text-color-neutral);
+    }
+}
+.card--rounded {
+    border-radius: 25px;
+}
+.card--dark {
+    background-color: var(--blue-lt);
+    color: var(--text-color-reverse);
+    p {
+        color: var(--text-color-reverse);
+    }
+}
+.card--two-icons {
+    img {
+        display: inline-block;
+        margin-right: 20px;
+    }
+}

@@ -1,0 +1,55 @@
+// line hover effect
+.line-effect {
+    position: relative;
+    display: inline-block;
+
+    &::before {
+        content:'';
+        border-bottom: 3px solid var(--blue-lt);
+        width:100%;
+        display: block;
+        position: absolute;
+        height:100%;
+        transition: transform ease 0.3s;
+        transform: scaleX(0);
+    }
+    &:hover::before, &:focus::before {
+        transform: scaleX(1);
+    }
+}
+
+.nav-social, .social-icons {
+    li {
+        margin: 0 20px;
+        display: inline;
+    }
+    a::before {
+        content:'';
+        display: inline-block;
+        height: 56px;
+        width: 56px;
+        filter: invert(0.8);
+        transition: all ease 0.3s;
+    }
+    a.instagram::before {
+        background: transparent url('images/icons/instagram.svg') 0 0 no-repeat;
+    }
+    a.facebook::before {
+        background: transparent url('images/icons/facebook.svg') 0 0 no-repeat;
+    }
+    a:hover::before, &:focus::before {
+        filter: invert(1);
+        transform: scale(1.1);
+    }
+
+    .visually-hidden {
+        border: 0;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute!important;
+        width: 1px;
+    }
+}

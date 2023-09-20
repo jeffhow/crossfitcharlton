@@ -1,0 +1,54 @@
+:root{
+    // CrossFit Charlton Brand Colors
+    --blue-dk: #{$blue-dk};
+    --blue-lt: #{$blue-lt};
+    --red: #{$red};
+    --white: #{$white};
+    
+    // Utility Colors
+    --bg-neutral: $bg-neutral;
+    --text-color-neutral: #{$text-color-neutral};
+    --text-color-reverse: #{$text-color-reverse};
+    
+    // Fonts
+    --emphasis-font: #{$emphasis-font};
+    --emphasis-style: #{$emphasis-style};
+    --reading-font: #{$reading-font};
+    
+    // Layout
+    --max-width: #{$max-width};
+    
+    // decorative
+    --box-shadow: #{$box-shadow};
+}
+
+*{
+    box-sizing: border-box;
+    font-family: var(--reading-font);
+    line-height: 1.5;
+    // border:1pt solid red;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    margin:0;
+    background-color: #ccc;
+    color: $soft-black;
+}
+
+h1, h2, h3, h4, h5, h6, p, input, li, select, option, label {
+    color: $soft-black;
+}
+
+.img-fit-top {
+    object-position: top !important;
+}
+
+/* Safari button fix*/
+input, textarea {
+    -webkit-appearance: none;
+    border-radius: 0;
+}
