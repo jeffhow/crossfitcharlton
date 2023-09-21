@@ -16,6 +16,7 @@ gem "jekyll", "~> 4.2.2"
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   gem 'jekyll-sitemap', '~> 1.4'
+  gem 'jekyll-redirect-from'
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
