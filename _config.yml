@@ -26,7 +26,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Start Today with a Free 1-on-1 Intro
 
 # Staging only
-baseurl: "https://jeffhow.github.io/" # the subpath of your site, e.g. /blog
+baseurl: "jeffhow.github.io" # the subpath of your site, e.g. /blog
 
 # Local and Production 
 # baseurl: "" # the subpath of your site, e.g. /blog
