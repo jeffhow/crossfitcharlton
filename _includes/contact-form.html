@@ -1,0 +1,33 @@
+<!-- contact-form -->
+<div class="col contact-form-container">
+
+    <div class="contact-modal" id="contact-modal">
+      <div class="message">
+          <p>
+              Thank you for your message.<br/>We will get in touch with you shortly.
+          </p>
+          <button id="contact-modal-close" class="cta cta--blue">Close</button>
+      </div>
+    </div>
+
+    <form method="post" class="contact-form" id="contact-form" >
+      <h2>Schedule your visit today</h2>
+      <label for="first-name">First Name*</label>
+      <input type="text" name="first-name" id="first-name" placeholder="First Name" required>
+      <label for="last-name">Last Name</label>
+      <input type="text" name="last-name" id="last-name" placeholder="Last Name">
+      <input type="hidden" name="route" id="route" value="contact">
+      <div style="position: absolute; left: -5000px;">
+        <input type="checkbox" name="turing-test" value="1" tabindex="-1" autocomplete="no" aria-hidden="true">
+      </div>
+      <label for="phone">Phone*</label>
+      <input type="tel" name="phone" id="phone" placeholder="Phone" required>
+      <label for="email">Email*</label>
+      <input type="email" name="email" id="email" placeholder="Email" required>
+      <button class="cta cta--lg cta--blue">Schedule your visit</button>
+    </form>
+
+    <script type="module" src="assets/js/contact.js"></script>
+    
+  </div><!-- /contact-form-container -->
+<!-- /contact-form -->
