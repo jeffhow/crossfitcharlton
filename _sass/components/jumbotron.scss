@@ -90,7 +90,15 @@
                 text-align: left;
                 padding: 0;
                 margin: 0;
-                text-shadow: 3px 3px 3px black;
+                // text-shadow: 3px 3px 3px black;
+                text-shadow: 3px  3px 0px #4e1b19, 
+                            -3px -3px 0px #4e1b19, 
+                             3px  0   0px #4e1b19, 
+                            -3px  0   0px #4e1b19, 
+                             0    3px 0px #4e1b19, 
+                             0   -3px 0px #4e1b19, 
+                            -3px  3px 0px #4e1b19, 
+                             3px -3px 0px #4e1b19;
                 // text-transform: uppercase;
                 font-family: 'Teko', sans-serif;
                 font-size: 3.5em;
@@ -114,7 +122,15 @@
                 line-height: 1;
                 color: var(--white);
                 margin: 0;
-                text-shadow: 2px 2px 2px black;
+                // text-shadow: 2px 2px 2px black;
+                text-shadow:  2px  2px 0px #4e1b19, 
+                              0   -2px 0px #4e1b19, 
+                              0    2px 0px #4e1b19, 
+                              2px  0   0px #4e1b19, 
+                             -2px  0   0px #4e1b19, 
+                             -2px -2px 0px #4e1b19, 
+                             -2px  2px 0px #4e1b19, 
+                              2px -2px 0px #4e1b19;
                 .no-break {
                     font: inherit;
                     white-space: nowrap;
