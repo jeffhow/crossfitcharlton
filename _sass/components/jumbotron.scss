@@ -89,18 +89,53 @@
                 color: var(--white);
                 text-align: left;
                 padding: 0;
-                margin: 5px 0;
-                text-shadow: 3px 3px 3px black;
-                text-transform: uppercase;
-                font-size: 2.5em;
-                @media screen and (min-width: $breakpoint) {
-                    font-size: 3.5em;
+                margin: 0;
+                // text-shadow: 3px 3px 3px black;
+                text-shadow: 3px  3px 0px #4e1b19, 
+                            -3px -3px 0px #4e1b19, 
+                             3px  0   0px #4e1b19, 
+                            -3px  0   0px #4e1b19, 
+                             0    3px 0px #4e1b19, 
+                             0   -3px 0px #4e1b19, 
+                            -3px  3px 0px #4e1b19, 
+                             3px -3px 0px #4e1b19;
+                // text-transform: uppercase;
+                font-family: 'Teko', sans-serif;
+                font-size: 3.5em;
+                font-weight: 600;
+                line-height: 1;
+                .break {
+                    display: block;
+                    font: inherit;
+                }
+                @media screen and (min-width: 720px) {
+                    font-size: 4.5em;
+                    .break {
+                        display: inline;
+                    }
                 }
             }
             .description {
+                font-family: 'Teko', sans-serif;
+                font-weight: 400;
+                font-size: 2em;
+                line-height: 1;
                 color: var(--white);
-                font-weight: 700;
-                text-shadow: 2px 2px 2px black;
+                margin: 0;
+                // text-shadow: 2px 2px 2px black;
+                text-shadow:  2px  2px 0px #4e1b19, 
+                              0   -2px 0px #4e1b19, 
+                              0    2px 0px #4e1b19, 
+                              2px  0   0px #4e1b19, 
+                             -2px  0   0px #4e1b19, 
+                             -2px -2px 0px #4e1b19, 
+                             -2px  2px 0px #4e1b19, 
+                              2px -2px 0px #4e1b19;
+                .no-break {
+                    font: inherit;
+                    white-space: nowrap;
+                }
+                
             }
         }
     }
