@@ -1,0 +1,102 @@
+---
+title: "Hold Policy"
+layout: contact
+
+jumbo-image: "assets/images/photos/jason-installing-sign-opt.jpg"
+# intro-text: "Membership Hold Policy"
+# jumbo-title: "We're flexible"
+
+sections:
+  - location.html
+  - final-cta.html
+---
+
+<div class="container multi-col contact-us">
+  <h2>Membership Hold Policy</h2>
+  <h3>THIS IS NOT A TERMINATION REQUEST</h3>
+  <ol class="space-after-item">
+    <li>You have the option to put your automatically recurring membership on hold for any reason.</li>
+
+    <li>Membership hold requests must be submitted no less than five business days before your upcoming invoice. All membership payments are non-refundable.</li>
+
+    <li>Membership hold requests are limited to 12 weeks per calendar year in two week increments.</li> 
+
+    <li>Upon expiration of the hold period that you select below, your account will automatically reactivate and regular membership payments will resume. Your original agreement will be extended by the amount of time of the membership hold.</li> 
+
+    <li>If you choose to cancel your membership during the hold period, the standard 4 week cancellation notice requirement stated in your membership agreement is applicable. If you choose to reactivate your membership after it is canceled, membership rates in effect at the time of reactivation will be applicable (membership rates are subject to change).</li>
+
+    <li>There is a $4 per week fee for Membership Holds.</li>
+
+  </ol>
+
+  <div class="contact-form-container">
+    <div class="contact-modal" id="contact-modal">
+      <div class="message">
+        <p>
+          Thank you for your request.<br />We will process your request soon.
+        </p>
+        <button id="contact-modal-close" class="cta cta--blue">Close</button>
+      </div>
+    </div>
+
+    <form method="post" class="contact-form" id="contact-form">
+      <h2>Membership Hold Request Form</h2>
+      <label for="first-name">First Name*</label>
+      <input
+        type="text"
+        name="first-name"
+        id="first-name"
+        placeholder="First Name"
+        required
+        />
+        <label for="last-name">Last Name*</label>
+        <input
+        type="text"
+        name="last-name"
+        id="last-name"
+        placeholder="Last Name"
+        required
+      />
+      <input type="hidden" name="route" id="route" value="hold">
+      <div style="position: absolute; left: -5000px">
+        <input
+          type="checkbox"
+          name="turing-test"
+          value="1"
+          tabindex="-1"
+          autocomplete="no"
+          aria-hidden="true"
+        />
+      </div>
+      <label for="phone">Phone*</label>
+      <input type="tel" name="phone" id="phone" placeholder="Phone" required />
+      <label for="email">Email*</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Email"
+        required
+      />
+
+      <fieldset>
+        <legend>Membership hold duration*</legend>
+        <div class="radio-options">
+          <div class="radio-option"><input type="radio" id="duration4" name="duration" value="4 Weeks" required><label for="duration4">4&nbsp;Weeks</label></div>
+          <!-- <div class="radio-option"><input type="radio" id="duration5" name="duration" value="5 Weeks" required><label for="duration5">5&nbsp;Weeks</label></div> -->
+          <div class="radio-option"><input type="radio" id="duration6" name="duration" value="6 Weeks" required><label for="duration6">6&nbsp;Weeks</label></div>
+          <!-- <div class="radio-option"><input type="radio" id="duration7" name="duration" value="7 Weeks" required><label for="duration7">7&nbsp;Weeks</label></div> -->
+          <div class="radio-option"><input type="radio" id="duration8" name="duration" value="8 Weeks" required><label for="duration8">8&nbsp;Weeks</label></div>
+          <!-- <div class="radio-option"><input type="radio" id="duration9" name="duration" value="9 Weeks" required><label for="duration9">9&nbsp;Weeks</label></div> -->
+          <div class="radio-option"><input type="radio" id="duration10" name="duration" value="10 Weeks" required><label for="duration10">10&nbsp;Weeks</label></div>
+          <!-- <div class="radio-option"><input type="radio" id="duration11" name="duration" value="11 Weeks" required><label for="duration11">11&nbsp;Weeks</label></div> -->
+          <div class="radio-option"><input type="radio" id="duration12" name="duration" value="12 Weeks" required><label for="duration12">12&nbsp;Weeks</label></div>
+        </div>
+      </fieldset>
+
+      <button class="cta cta--lg cta--blue" style="margin-top: 40px">Request Hold</button>
+    </form>
+  </div>
+</div>
+
+<script type="module" src="assets/js/contact.js"></script>

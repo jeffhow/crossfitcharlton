@@ -1,0 +1,118 @@
+---
+layout: default
+---
+<section class="jumbotron">
+    <div class="hero-wrapper">
+      <picture class="hero-image">
+        <source media="(max-width: 500px)" srcset="assets/images/photos/shirts-500x500.jpg" />
+        <source media="(max-width: 800px)" srcset="assets/images/photos/shirts-800x800.jpg" />
+        <source media="(min-width: 1080px)" srcset="assets/images/photos/shirts-1080x1080.jpg" />
+        <img src="assets/images/photos/shirts-1080x1080.jpg" class="hero-image"  alt="Photo of red CrossFit Charlton t-shirts">
+      </picture>
+      <!-- <img src="assets/images/photos/shirts-1080x1080.jpg" class="hero-image"  alt="Photo of red CrossFit Charlton t-shirts"> -->
+      
+      <header class="container multi-col jumbotron__header">
+        <div class="jumbotron__text col">
+          <p class="description">CrossFit Charlton</p>
+          <h2 class="page-title"><span class="break">Building.</span><span class="break">Better.</span><span class="break">Humans.</span></h2>
+          
+          <p class="description">
+            Start Today with a Free
+            <span class="no-break">&ldquo;no sweat&rdquo; 1-on-1 intro</span>
+          </p>
+        </div>
+        <div class="col">
+          <!-- <a class="cta cta--lg" href="contact-us.html">Get started</a> -->
+          <a class="cta cta--lg" href="https://crossfitcharlton.pushpress.com/open/interested">Get started</a>
+        </div>
+      </header>
+    </div>  
+          
+</section>
+
+<section class="teasers">
+    <div class="container multi-col">
+      <div class="col card card--rounded">
+        <!-- <img src="assets/images/icons/trainer-icon.svg" alt="coach icon" width="75" height="75"> -->
+        <h3>Expert Coaching</h3>
+        <p>Our staff of trained coaches will keep you exercising safely and effectively.</p>
+      </div>
+      <div class="col card card--rounded">
+        <!-- <img src="assets/images/icons/communities-social-networking-icon.svg" alt="community icon" width="75" height="75"> -->
+        <h3>Community</h3>
+        <p>Our growth-minded community is supportive, motivating, encouraging, and cares about your success.</p>
+      </div>
+      <div class="col card card--rounded">
+        <!-- <img src="assets/images/icons/welcome-icon.svg" alt="people talking icon" width="100" height="75"> -->
+        <h3>Facility</h3>
+        <p>We take pride in our 3,200 sq ft <abbr title="American Disabilities Act">ADA</abbr> compliant facility with clean and well maintained equipment.</p>
+      </div>
+    </div>
+</section>
+
+<section class="marketing">
+  <h2>Choose the right starting point for you!</h2>
+  <div class="container multi-col multi-col--reverse">
+    <div class="col">
+      <img src="assets/images/photos/gym-floor.jpg" alt="Gym photo">
+    </div>
+    <div class="col">
+      <h3>CrossFit</h3>
+      <p>CrossFit is a complete, scaleable fitness program designed to meet 
+        the needs of beginners as well as experienced athletes. After your 
+        workout you'll feel accomplished, energized, and ready to come back for more!</p>
+      <!-- <a href="contact-us.html" class="cta cta--blue">Get Started</a> -->
+      <!-- <a href="https://crossfitcharlton.pushpress.com/open/interested" class="cta cta--blue">Get Started</a> -->
+
+      <h3 style="margin-top:20px;">Foundations</h3>
+      <p>Our Foundations course is designed to introduce new members to CrossFit 
+        with workouts focusing on bodyweight exercises and introductory weight 
+        training.
+        <br>Members graduate into our regular CrossFit classes and continue 
+        to meet new milestones on their fitness journey!</p>
+      <a href="https://crossfitcharlton.pushpress.com/open/interested" class="cta cta--blue">Get Started</a>
+    </div>
+  </div>
+  <!-- <div class="container multi-col">
+    <div class="col">
+      <img src="assets/images/photos/coach-heidi.jpg" class="img-fit-top" alt="Gym photo">
+    </div>
+    <div class="col">
+      <h3>Foundations</h3>
+      <p>Our Foundations course is designed to introduce new members to CrossFit 
+        with workouts focusing on bodyweight exercises and introductory weight 
+        training.
+        <br>Members graduate into our regular CrossFit classes and continue 
+        to meet new milestones on their fitness journey!</p>
+      <a href="https://crossfitcharlton.pushpress.com/open/interested" class="cta cta--blue">Get Started</a>
+    </div>
+  </div> -->
+</section>
+
+
+<div class="cc-bg-pattern py-25">
+  {%- include reviews.html -%}
+  
+  <section class="getting-started">
+    <h2>Ready To Get Started?</h2>
+    <ol class="container multi-col">
+      <li class="card card--rounded">
+        <h3>Visit Us</h3>
+        <p>Schedule a "no sweat" introduction, meet us and tell us your fitness goals. We'll help you plan a starting point and you'll try out a class for free!</p>
+      </li>
+      
+      <li class="card card--rounded">
+        <h3>Take Foundations Classes</h3>
+        <p>Our staff will guide you every step of the way, with guidance tailored for your fitness level.</p>
+      </li>
+      
+      <li class="card card--rounded">
+        <h3>Receive Ongoing Support</h3>
+        <p>We help you build healthy habits that keep you on the right track for long-term success.</p>
+      </li>
+    </ol>
+  </section>
+</div>
+  
+{%- include community.html -%}
+{%- include location.html -%}

@@ -1,0 +1,142 @@
+.jumbotron {
+    position: relative;
+    max-width:100%;
+
+    .hero-wrapper {
+        background-color: #000;
+        position: relative;
+        width: 100%;
+        height: calc(100vh - #{$header-logo-height + $header-padding *2});
+    }
+    .page--about {
+        
+        img {
+            object-position: 5% 15%;
+        }
+
+    }
+    .hero-wrapper--page {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        background-color: var(--blue-dk);
+        height:100%;
+        min-height: calc(50vh - #{$header-logo-height + $header-padding *2});
+        padding-bottom: 50px;
+        
+        header {
+            margin: 0 auto;
+            
+        }
+        .hero-image {
+            opacity:60%;
+            display: block;
+            margin: auto;
+            max-width: 1020px;
+            top: 0; left: 0; bottom: 0; right: 0;
+            mask-image: linear-gradient(
+                90deg,
+                rgba(0,0,0,0) 0%, rgba(0,0,0,1) 10%,
+                rgba(0,0,0,1) 90%, rgba(0,0,0,0) 100%
+            );
+            -webkit-mask-image: linear-gradient(
+                90deg, 
+                rgba(0,0,0,0) 0%, rgba(0,0,0,1) 10%,
+                rgba(0,0,0,1) 90%, rgba(0,0,0,0) 100%
+            );
+           
+        }
+    }
+
+    .hero-image {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height:100%;
+        object-fit: cover;
+        object-position: center;
+        opacity:70%;
+    }
+    
+    .jumbotron__header {
+        margin: auto;
+        position: relative;
+        width: 100%;
+        height: 85%;
+        padding: 15px;
+        align-items: flex-end;
+        align-content: flex-end;
+        max-width: var(--max-width);
+        
+        @media screen and (min-width: $jumbo-breakpoint) {
+            height: 70%;
+        }
+        
+        .jumbotron__text {
+            color: var(--white);
+            
+            .intro-text {
+                background-color: rgba(255,255,255,0.1);
+                color: var(--text-color-reverse);
+                letter-spacing: 2px;
+                display: inline-block;
+                padding: 15px;
+                font-weight: 700;
+                text-transform: uppercase;
+                margin: 0;
+            }
+            .page-title {
+                color: var(--white);
+                text-align: left;
+                padding: 0;
+                margin: 0;
+                // text-shadow: 3px 3px 3px black;
+                text-shadow: 3px  3px 0px #4e1b19, 
+                            -3px -3px 0px #4e1b19, 
+                             3px  0   0px #4e1b19, 
+                            -3px  0   0px #4e1b19, 
+                             0    3px 0px #4e1b19, 
+                             0   -3px 0px #4e1b19, 
+                            -3px  3px 0px #4e1b19, 
+                             3px -3px 0px #4e1b19;
+                // text-transform: uppercase;
+                font-family: 'Teko', sans-serif;
+                font-size: 3.5em;
+                font-weight: 600;
+                line-height: 1;
+                .break {
+                    display: block;
+                    font: inherit;
+                }
+                @media screen and (min-width: 720px) {
+                    font-size: 4.5em;
+                    .break {
+                        display: inline;
+                    }
+                }
+            }
+            .description {
+                font-family: 'Teko', sans-serif;
+                font-weight: 400;
+                font-size: 2em;
+                line-height: 1;
+                color: var(--white);
+                margin: 0;
+                // text-shadow: 2px 2px 2px black;
+                text-shadow:  2px  2px 0px #4e1b19, 
+                              0   -2px 0px #4e1b19, 
+                              0    2px 0px #4e1b19, 
+                              2px  0   0px #4e1b19, 
+                             -2px  0   0px #4e1b19, 
+                             -2px -2px 0px #4e1b19, 
+                             -2px  2px 0px #4e1b19, 
+                              2px -2px 0px #4e1b19;
+                .no-break {
+                    font: inherit;
+                    white-space: nowrap;
+                }
+                
+            }
+        }
+    }
+}

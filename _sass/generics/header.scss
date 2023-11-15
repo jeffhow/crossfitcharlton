@@ -1,0 +1,242 @@
+// CrossFit Charlton Brand Colors
+$blue-dk: #002E6D;
+$blue-lt: #87a9e2;
+$red: #ea0029;
+$white: #fff;
+
+// Header sytem variables
+$nav-breakpoint: 768px;
+$max-width: 1280px;
+$header-logo: url("images/logos/cfc_horizontal-logo_color.svg");
+$header-background: $white;
+$header-logo-height: 75px;
+$header-logo-width: 212px;
+$header-padding: 15px;
+$nav-text-color: $blue-dk;
+$nav-text-color-hover: $blue-lt;
+$cta-text-color: $white;
+$cta-bg-color: $red;
+
+// css variable for JS
+:root {
+  --nav-breakpoint: #{$nav-breakpoint};
+}
+
+// Utility - Remove if in main stylesheet
+// * {
+//     box-sizing: border-box;
+//     font-family: sans-serif;
+// }
+
+// body {
+//   margin: 0;
+// }
+
+
+// Header-system
+.header-wrapper {
+  width: 100%;
+  background-color: $header-background;
+}
+
+.site-header {
+  width: 100%;
+  max-width: $max-width;
+  margin: auto;
+  position: relative; // set the positioning context
+  display: flex;
+  justify-content: space-between;
+    
+    .container {
+      padding: $header-padding;
+      background-color: $header-background;
+      position: relative;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 6;
+      
+      @media screen and (min-width: $nav-breakpoint) {
+        width: calc(#{$header-logo-width} + #{$header-padding} *2);
+        background-color: transparent;
+      }
+    }
+  
+    .brand {
+      display: block;
+      height: $header-logo-height;
+      width: $header-logo-width;
+      color: $nav-text-color;
+      font-size: 2em;
+      margin: 0;
+      background-image: $header-logo;
+      background-repeat: no-repeat;
+      background-size: $header-logo-width;
+      background-position: left center;
+      color: var(--text-color-neutral);
+      display: inline-block;
+      text-decoration: none;
+      transition: transform 0.3s ease;
+      transform-origin: left center;
+  
+      &:hover {
+        transform: scale(1.05);
+      }
+  
+      h1 {
+        margin: 0;
+      }
+  
+      .wordmark {
+        position: absolute;
+        left: -999em;
+      }
+    }
+  
+    .hamburger {
+      display: block;
+      position: relative;
+      width: 38px;
+      height: 32px;
+      border: none;
+      background: none;
+      padding: 0;
+      margin: 0;
+  
+      .line-container {
+        display: block;
+        position: absolute;
+        width: 38px;
+        height: 32px;
+        padding: 5px;
+        top: 0;
+        right: 0;
+      }
+      &.open .line-container {
+        padding-left: 4px;
+      }
+      .line {
+        display: block;
+        background-color: $nav-text-color;
+        height: 2px;
+        width: 28px;
+        position: absolute;
+        transition: transform 0.15s cubic-bezier(0.47, -0.15, 0.49, 1.14);
+      }
+      .line-1 {
+        top: 5px;
+        transform-origin: top left;
+      }
+      .line-2 {
+        top: 15px;
+      }
+      .line-3 {
+        bottom: 5px;
+        transform-origin: bottom left;
+      }
+      &.open .line-1 {
+        transform: translateX(6px) rotate(45deg);
+      }
+      &.open .line-2 {
+        transform: scale(0);
+      }
+      &.open .line-3 {
+        transform: translateX(6px) rotate(-45deg);
+      }
+  
+      @media screen and (min-width: $nav-breakpoint) {
+        display: none;
+      }
+    } /** /.hamburger **/
+  
+    
+    .primary-nav {
+      display: flex;
+      justify-content: center;
+      z-index: 5;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform-origin: top;
+      background-color: $header-background;
+      transform: translateY(calc(-100% + #{$header-logo-height} + #{$header-padding} *2));
+      
+      
+
+      &.mobile {
+        transition: transform 0.3s ease;  
+      }
+      
+      &.open {
+        transform: translateY(calc(#{$header-logo-height} + #{$header-padding} *2 ));
+      }
+      
+      ul {
+        list-style-type: none;
+        padding:0;
+        margin:0;
+        text-align: center;
+      }
+      li {
+        padding:0;
+        margin: 0;
+      }
+      
+      a {
+        margin: 15px 0;
+        color: $nav-text-color;
+        text-decoration: none;
+        transition: color 0.3s ease;
+        display: inline-block;
+        position: relative;
+  
+        &:hover {
+          color: $nav-text-color-hover;
+        }
+
+        // Underline Effect
+        &::before {
+          content:'';
+          position: absolute;
+          display: block;
+          border-bottom: 2 px $blue-dk;
+          width: 100%;
+          height: 100%;
+        }
+      }
+      li.primary-nav__cta a {
+        transform-origin: center;
+        color: $cta-text-color;
+        background-color: $cta-bg-color;
+        padding: 15px;
+        border-radius: 15px;
+        font-weight: bold;
+        transition: all 0.3s ease;
+        &:hover {
+            transform: scale(1.1);
+          }
+      }
+      
+      @media screen and (min-width: $nav-breakpoint) {
+        position: relative;
+        z-index: 4;
+        justify-content: flex-end;
+        background-color: transparent;
+        transform: none;
+        ul {
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+          li {
+            margin: 0 15px;
+            a{
+              margin: 0;
+            }
+          }
+        }
+      }
+    } /* /.primary-nav */
+    
+  } /* /.site-header */

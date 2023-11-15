@@ -1,0 +1,36 @@
+
+.marketing {
+    padding-top: 50px;
+    padding-bottom: 25px;
+    text-align: center;
+
+    h3 {
+        margin-top: 0;
+ 
+    }
+    .container {
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .col {
+        flex: 1 1 400px;
+        padding: 15px;
+    }
+    .cta {
+        margin: 15px auto;
+        align-self: center;
+        text-align: center;
+    }
+    img {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+        box-shadow: 2px 2px 12px rgba(0,0,0,0.3);
+    }
+    @media screen and (min-width: 800px) {
+        img {
+            height: 550px;
+
+        }
+    }
+}

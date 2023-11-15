@@ -1,0 +1,19 @@
+---
+layout: default
+---
+{% comment %}
+  <!-- Old page header -->
+  {%- include entry-header.html -%}
+{% endcomment %}
+
+{%- include entry-header.html -%}
+
+  <section class="page-content">
+    {{ content }}
+  </section>
+
+  {% if page.sections %}
+    {% for s in page.sections %}
+        {%- include {{ s }} -%}
+    {% endfor %}
+  {% endif %}

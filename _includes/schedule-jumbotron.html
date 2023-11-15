@@ -1,0 +1,17 @@
+<section class="jumbotron">
+    <div class="hero-wrapper hero-wrapper--page">
+      {% if page.jumbo-image %}
+        <img src="{{ page.jumbo-image }}" class="hero-image" alt="Gym Photo">
+      {% endif %}
+
+      <header class="container multi-col jumbotron__header">
+        <div class="jumbotron__text col">
+
+        {% if page.jumbo-title %}
+          <h2 class="page-title">{{ page.jumbo-title }}</h2>
+        {% endif %}
+        </div>
+
+      </header>
+    </div>  
+  </section>
