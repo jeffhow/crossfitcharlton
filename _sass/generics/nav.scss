@@ -53,3 +53,22 @@
         width: 1px;
     }
 }
+
+.store-link {
+    .line-effect {
+        padding-left: 25px;
+        &:before {
+            left:0;
+        }
+    }
+    .shirt-icon {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 20px;
+    }
+    &:hover .cls-1 {
+        fill: #87a9e2;
+    }
+}
