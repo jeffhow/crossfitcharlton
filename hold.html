@@ -79,6 +79,19 @@ sections:
         required
       />
 
+      <label for="request-date">Request date*</label>
+      <input
+        type="date"
+        name="request-date"
+        id="request-date"
+        required
+      />
+      <script>
+        // set default date and min value to today
+        document.getElementById('request-date').valueAsDate = new Date();
+        document.getElementById('request-date').min = new Date().toISOString().split('T')[0];
+      </script>
+
       <fieldset>
         <legend>Membership hold duration*</legend>
         <div class="radio-options">
