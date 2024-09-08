@@ -81,6 +81,19 @@ sections:
         placeholder="Email"
         required
       />
+      <label for="request-date">Request date*</label>
+      <input
+        type="date"
+        name="request-date"
+        id="request-date"
+        min="{new Date().toISOString().split('T')[0]}"
+        required
+      />
+      <script>
+        // set default date and min value to today
+        document.getElementById('request-date').valueAsDate = new Date();
+        document.getElementById('request-date').min = new Date().toISOString().split('T')[0];
+      </script>
       <label for="reason">Please select the option below that best describes your reason for leaving</label>
       <select name="reason" id="reason">
         <option selected class="muted">Select Reason ...</option>
